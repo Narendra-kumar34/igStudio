@@ -1,0 +1,34 @@
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--color-primary);
+    width: 438px;
+    height: 74px;
+    padding-left: 24px;
+    padding-top: 28px;
+    padding-bottom: 28px;
+    padding-right: 10px;
+    border-radius: 43px;
+}
+
+.inputWrapper {
+    display: flex;
+    align-items: center;
+    opacity: 20%;
+}
+
+.inputBox {
+    background-color: var(--color-primary);
+    border: none;
+    padding-left: 10px;
+}
+
+.talkButton {
+    padding: 18px 32px;
+    border-radius: 43px;
+    background-color: var(--color-yellow);
+    color: var(--color-black);
+    border: none;
+    cursor: pointer;
+}

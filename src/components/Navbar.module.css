@@ -1,0 +1,17 @@
+nav {
+    background-color: var(--color-black);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 100px;
+}
+
+.navLinks {
+    display: flex;
+    gap: 41px;
+}
+
+.contactWrapper {
+    border: solid 2px var(--color-white);
+    padding: 14px 36px;
+}

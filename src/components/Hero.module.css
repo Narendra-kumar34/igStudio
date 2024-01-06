@@ -1,0 +1,33 @@
+.hero {
+    background-color: var(--color-black);
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 30px;
+    padding-bottom: 150px;
+    display: flex;
+    justify-content: space-between;
+    gap: 93px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px 0px;
+    width: 571px;
+}
+
+.headText {
+    font-size: 66px;
+}
+
+.subText {
+    opacity: 30%;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.picture {
+    width: 467.71px;
+    height: 544.71px;
+}

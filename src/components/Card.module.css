@@ -1,0 +1,37 @@
+.image {
+    height: 101px;
+    width: 101px !important;
+}
+
+.wrapper {
+    height: 377px;
+    width: 359px;
+    padding: 28px;
+    border: 1.4px solid #2e2e2e;
+    border-radius: 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.heading {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.content {
+    opacity: 30%;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+button {
+    border-radius: 24.5px;
+    background-color: var(--color-yellow);
+    color: var(--color-black);
+    border: none;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 10px 20px;
+    width: fit-content;
+}

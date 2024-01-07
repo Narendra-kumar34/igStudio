@@ -1,0 +1,21 @@
+.wrapper {
+    padding: 90px 100px;
+}
+
+.headWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.heading {
+    font-weight: 600;
+    font-size: 54px;
+    width: 374px;
+}
+
+.buttonsWrapper {
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+}

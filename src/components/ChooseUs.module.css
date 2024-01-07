@@ -1,0 +1,18 @@
+.wrapper {
+    padding: 90px 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+.heading {
+    font-size: 54px;
+    font-weight: 600;
+    text-align: center;
+    padding-bottom: 97px;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+}

@@ -35,3 +35,8 @@ button {
     padding: 10px 20px;
     width: fit-content;
 }
+
+.subHeading {
+    font-size: 14px;
+    font-weight: 400;
+}

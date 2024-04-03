@@ -1,11 +1,6 @@
 .wrapper {
     padding: 90px 100px;
-}
-
-.headWrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    position: relative;
 }
 
 .heading {
@@ -18,4 +13,18 @@
     width: 200px;
     display: flex;
     justify-content: space-between;
+}
+
+.carousel {
+    position: relative;
+}
+
+.head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    flex-wrap: wrap;
 }

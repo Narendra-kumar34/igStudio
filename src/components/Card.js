@@ -6,8 +6,9 @@ export default function Card({data, type}){
         <div className={styles.wrapper}>
             <img src={data.image} alt="giftPic" className={styles.image} />
             <div className={styles.heading}>{data.title}</div>
+            {(type === "carousel") && <div className={styles.subHeading}>{data.subHeading}</div>}
             <div className={styles.content}>{data.content}</div>
-            <button>Read More</button>
+            {(type === "chooseUs") && <button>Read More</button>}
         </div>
     )
 }

@@ -1,19 +1,47 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styles from "./Carousel.module.css";
-import { ReactComponent as LeftArr } from "../assets/LeftArrow.svg";
-import { ReactComponent as RightArr } from "../assets/RightArrow.svg";
+import { Navigation } from "swiper";
+import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
+import "swiper/css";
+import CarouselLeftNav from "./CarouselLeftNav";
+import CarouselRightNav from "./CarouselRightNav";
 
-export default function Carousel(){
-    return(
-        <div className={styles.wrapper}>
-        <div className={styles.headWrapper}>
-            <div className={styles.heading}>What says our happy Clients</div>
-            <div className={styles.buttonsWrapper}>
-                <LeftArr />
-                <RightArr />
-            </div>
-        </div>
-        <div className={styles.carousel}></div>
-        </div>
-    )
+// const Controls = ({ data }) => {
+//     const swiper = useSwiper();
+//     useEffect(() => {
+//       if (swiper) {
+//         swiper.slideTo(0);
+//       }
+//     }, [data, swiper]);
+
+//     return <></>;
+//   };
+
+export default function Carousel({ data, renderComponent }) {
+  return (
+    <div className={styles.wrapper}>
+      <div className={styles.carousel}>
+        <Swiper
+          style={{paddingTop: "258px"}}
+          initialSlide={0}
+          modules={[Navigation]}
+          spaceBetween={40}
+          slidesPerView={"auto"}
+          allowTouchMove
+        >
+          {/* <Controls data={data} /> */}
+          <div className={styles.head}>
+          <div className={styles.heading}>What says our happy Clients</div>
+          <div className={styles.buttonsWrapper}>
+            <CarouselLeftNav />
+            <CarouselRightNav />
+          </div>
+          </div>
+          {data.map((ele, index) => (
+            <SwiperSlide key={index}>{renderComponent(ele)}</SwiperSlide>
+          ))}
+        </Swiper>
+      </div>
+    </div>
+  );
 }

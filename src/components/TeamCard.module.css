@@ -1,0 +1,28 @@
+.image {
+    height: 68px;
+    width: 68px !important;
+}
+
+.wrapper {
+    width: 100%;
+    padding: 26px;
+    border-radius: 14px;
+    display: flex;
+    gap: 22px;
+    cursor: pointer;
+}
+
+.wrapper:hover {
+    background-color: var(--color-yellow);
+}
+
+.heading {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.subHeading {
+    font-size: 14px;
+    font-weight: 400;
+    opacity: 30%;
+}

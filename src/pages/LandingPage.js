@@ -8,6 +8,7 @@ import Practice from "../components/Practice";
 import { CarouselData, TeamData } from "../api/api";
 import Card from "../components/Card";
 import OurTeam from "../components/OurTeam";
+import Faq from "../components/Faq";
 
 export default function LandingPage(){
     return(
@@ -18,6 +19,7 @@ export default function LandingPage(){
         <Practice />
         <Carousel data={CarouselData} renderComponent={(data) => <Card data={data} type="carousel" />} />
         <OurTeam data={TeamData} />
+        <Faq />
         </>
     )
 }

@@ -10,7 +10,7 @@ import ElderAbuse from "../assets/ElderAbuse.png";
 
 export default function Practice() {
   return (
-    <div className={styles.wrapper}>
+    <div className={styles.wrapper} id="practiceAreas">
       <div className={styles.heading}>Area of Practices</div>
       <Grid container spacing={4}>
         <Grid item xs={8}>

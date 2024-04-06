@@ -1,0 +1,15 @@
+.wrapper {
+    padding-top: 40px;
+    background-color: var(--color-black);
+}
+
+.copyright {
+    display: flex;
+    gap: 25px;
+    background-color: var(--color-black);
+    font-size: 14px;
+    font-weight: 400;
+    justify-content: center;
+    align-items: center;
+    padding: 90px 100px;
+}

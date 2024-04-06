@@ -5,7 +5,7 @@ import Grid from '@mui/material/Grid';
 
 export default function OurTeam({data}) {
     return(
-    <div className={styles.wrapper}>
+    <div className={styles.wrapper} id="aboutUs">
         <div className={styles.heading}>Our Team</div>
         <div>
             <Grid container rowSpacing={10} spacing={2}>

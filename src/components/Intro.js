@@ -3,7 +3,7 @@ import styles from "./Intro.module.css";
 
 export default function Intro(){
     return(
-        <div className={styles.wrapper}> 
+        <div className={styles.wrapper} id="attorneys"> 
         <div className={styles.heading}>Let’s Introduce Ourself</div>
         <div className={styles.contentWrapper}>
             <h1>Criminal Lawyer</h1>

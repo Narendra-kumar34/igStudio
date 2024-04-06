@@ -12,7 +12,7 @@ export default function EmailBox(){
                 <Icon />
                 <input type="email" placeholder="Enter your email address" className={styles.inputBox} />
             </div>
-            <button className={styles.talkButton} type="submit">Let's Talk</button>
+            <input className={styles.talkButton} type="submit" placeholder="Let's Talk" />
         </form>
     )
 }

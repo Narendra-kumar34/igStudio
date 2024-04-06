@@ -9,6 +9,7 @@ import { CarouselData, TeamData } from "../api/api";
 import Card from "../components/Card";
 import OurTeam from "../components/OurTeam";
 import Faq from "../components/Faq";
+import NewsLetter from "../components/NewsLetter";
 
 export default function LandingPage(){
     return(
@@ -20,6 +21,7 @@ export default function LandingPage(){
         <Carousel data={CarouselData} renderComponent={(data) => <Card data={data} type="carousel" />} />
         <OurTeam data={TeamData} />
         <Faq />
+        <NewsLetter />
         </>
     )
 }
